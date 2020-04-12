@@ -210,6 +210,10 @@ for l in soup.find_all('a'):
     if selki and re.search(rxstr, href):
         url = "{0}{1}".format(link, href)
         files.add(url)
+    rxstr = "linux-modules-[^_]*-{0}_.*_{1}\.deb".format(flavors[self-1],archs[sela-1])
+    if selki and re.search(rxstr, href):
+        url = "{0}{1}".format(link, href)
+        files.add(url)
     rxstr = "linux-image-extra-[^_]*-{0}_.*_{1}\.deb".format(flavors[self-1],archs[sela-1])
     if selke and re.search(rxstr, href):
         url = "{0}{1}".format(link, href)
