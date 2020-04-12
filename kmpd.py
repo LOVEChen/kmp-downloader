@@ -205,8 +205,12 @@ for l in soup.find_all('a'):
     rxstr = "linux-headers-[^_]*(?:-{0}_.*_{1}|.*_all)\.deb".format(flavors[self-1],archs[sela-1])
     if selkh and re.search(rxstr, href):
         url = "{0}{1}".format(link, href)
-        files.add(url)
     rxstr = "linux-image-[^_]*-{0}_.*_{1}\.deb".format(flavors[self-1],archs[sela-1])
+    if selki and re.search(rxstr, href):
+        url = "{0}{1}".format(link, href)
+        files.add(url)
+        files.add(url)
+    rxstr = "linux-modules-[^_]*-{0}_.*_{1}\.deb".format(flavors[self-1],archs[sela-1])
     if selki and re.search(rxstr, href):
         url = "{0}{1}".format(link, href)
         files.add(url)
